@@ -1,0 +1,136 @@
+/* NAV STYLING */
+
+.nav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 4rem 0.5rem 4rem;
+  position: sticky;
+  top: -1px;
+  width: 100%;
+  height: auto;
+}
+
+.nav__title {
+  color: #335576;
+  font-size: 1.2rem;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav__list-item {
+  color: black;
+  padding: 0.5rem 0rem;
+  margin: 0rem 0.5rem;
+  font-size: 1rem;
+  transition: 0.1s;
+}
+
+.nav__list-item:hover {
+  border-bottom: solid 3px #db7b4e46;
+}
+
+.nav__list-item--underline {
+  border-bottom: solid 3px #db7a4e;
+}
+
+/* MAIN STYLING */
+
+.hawaii {
+  background: url(../assets/Images/hawaii.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 4rem 6rem 4rem;
+  animation: pan 200s ease-in-out infinite;
+}
+
+.iceland {
+  background: url(../assets/Images/iceland.jpg);
+  background-size: cover;
+  padding: 4rem 4rem 6rem 4rem;
+  animation: pan 200s ease-in-out infinite;
+}
+
+.greece {
+  background: url(../assets/Images/greece.jpg);
+  background-size: cover;
+  padding: 4rem 4rem 6rem 4rem;
+  animation: pan 200s ease-in-out infinite;
+}
+
+@keyframes pan {
+  0% {
+    background-position-y: 100%;
+  }
+  50% {
+    background-position-y: 0%;
+  }
+  100% {
+    background-position-y: 100%;
+  }
+}
+
+.destination__title {
+  color: #ffffff;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.card__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 5px;
+  width: 15.625rem;
+  height: 23.438rem;
+  margin: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.card__title {
+  color: black;
+  font-size: 1.2rem;
+  border-bottom: solid black 2px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.card__activity-list {
+  width: 100%;
+  height: 100%;
+}
+
+.card__activity {
+  background: #fefaf5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  height: 18%;
+  margin-bottom: 1rem;
+}
+
+/* for screen <550px wide */
+
+@media (max-width: 550px) {
+  .nav {
+    flex-direction: column;
+  }
+}
